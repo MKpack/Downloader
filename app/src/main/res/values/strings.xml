@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DownloadDemo</string>
+    <string name="download_title">下载管理</string>
+    <string name="downloading">下载中</string>
+    <string name="isDownloaded">已下载</string>
+    <string name="create_download">新建下载</string>
+    <string name="settings">设置</string>
+    <string name="three_pointer_button">按钮</string>
+    <string name="backtomain">backToMain</string>
+    <string name="create_title">创建下载任务</string>
+    <string name="test_link">https://dlied4.csyjw.tcdnos.com/myapp/1104466820/cos.release-40109/10040714_com.tencent.tmgp.sgame_a3929795_11.1.1.6_X9RxFt.apk?mkey=lego_ztc&amp;f=00&amp;sche_type=7&amp;cip=49.74.199.37&amp;proto=https&amp;access_type=&amp;sign=1758762825.0f49e72469d13c52ec9b958824d59610.b8b4829a0f9ce5a1c8e65b66dd87335b.IR-vfn9Yw5NjWzXnXgvxbmgP2KdExtdMit2xASVcx0o&amp;tx_domain=dlied4.myapp.com&amp;tx_path=%2Fmyapp%2F1104466820%2F&amp;tx_id=6c9382a8c8</string>
+</resources>

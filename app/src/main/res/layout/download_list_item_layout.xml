@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/list_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/outline_android_24"
+        android:minWidth="30dp"
+        android:minHeight="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/list_item_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/list_item_big_title"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/list_item_big_title"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="英雄11111111111111111111111111111111111联盟手游.apk"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/list_item_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/list_item_small_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="95.31MB/1.93GB"
+        app:layout_constraintStart_toStartOf="@id/list_item_big_title"
+        app:layout_constraintTop_toBottomOf="@id/list_item_big_title" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/list_item_progress"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:progress="0"
+        app:indicatorColor="@color/blue"
+        app:layout_constraintStart_toStartOf="@id/list_item_small_title"
+        app:layout_constraintEnd_toStartOf="@+id/list_item_btn"
+        app:layout_constraintTop_toBottomOf="@id/list_item_small_title"
+        app:trackCornerRadius="4dp" />
+
+    <Button
+        android:id="@+id/list_item_btn"
+        android:layout_width="73dp"
+        android:layout_height="38dp"
+        android:background="@drawable/light_blue_round_border"
+        android:text="暂停"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@id/list_item_small_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/list_item_big_title"
+        android:layout_marginEnd="10dp"/>
+    <TextView
+        android:id="@+id/list_item_state"
+        android:text="36.3MB/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/list_item_small_title"
+        app:layout_constraintRight_toRightOf="@+id/list_item_progress"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

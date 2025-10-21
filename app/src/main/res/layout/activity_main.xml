@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/main_download_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/download_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/main_downloading_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/downloading"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/main_download_plan"
+        app:layout_constraintStart_toStartOf="@+id/main_download_plan" />
+
+    <ListView
+        android:id="@+id/main_downloading_listview"
+        android:background="@drawable/white_round_border"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/main_downloading_title"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+
+    <TextView
+        android:id="@+id/main_isDownloaded_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isDownloaded"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/main_downloading_listview"
+        app:layout_constraintStart_toStartOf="@+id/main_downloading_title"
+        android:layout_marginTop="10dp"
+        />
+    <ListView
+        android:id="@+id/main_isDownloaded_listview"
+        android:background="@drawable/white_round_border"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/main_isDownloaded_title"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+    <ImageButton
+        android:id="@+id/image_button"
+        android:background="@android:color/transparent"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:contentDescription="@string/three_pointer_button"
+        android:src="@drawable/baseline_more_vert_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/main_download_plan"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
